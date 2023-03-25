@@ -1,19 +1,16 @@
-import * as React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
 import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import ListSubheader from '@mui/material/ListSubheader';
+import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Link from '../src/Link';
-import ProTip from '../src/ProTip';
-import Copyright from '../src/Copyright';
-import { ListItem } from '@mui/material';
+import * as React from 'react';
 
-export default function Home() {
+import Copyright from '../src/Copyright';
+
+export default function Home(): React.ReactElement<any> {
   return (
     <Container maxWidth="lg">
       <Box
@@ -26,24 +23,38 @@ export default function Home() {
         }}
       >
         <Typography variant="h2" component="h1">
-          BREW HOUSE
+          THE BREW HOUSE
         </Typography>
 
-        <Typography variant="h5" gutterBottom>
-          La Puente
-        </Typography>
+        <Typography variant="h5">111 S 1st St</Typography>
+        <Typography variant="h5">La Puente, CA 91744</Typography>
         <br />
         <Typography variant="h3" gutterBottom>
           Menu
         </Typography>
 
-        <br />
+        <ImageList
+          cols={1}
+          gap={8}
+          sx={{ width: 500, height: 800 }}
+          rowHeight={300}
+        >
+          <ImageListItem>
+            <img
+              alt="brew-house-menu-1"
+              loading="lazy"
+              src="https://i.imgur.com/YwzdWaW.jpg"
+            />
+          </ImageListItem>
 
-        <Typography variant="h5">Address</Typography>
-        <Typography>111 S 1st St</Typography>
-        <Typography>La Puente, CA 91744</Typography>
-
-        <br />
+          <ImageListItem>
+            <img
+              alt="brew-house-menu-2"
+              loading="lazy"
+              src="https://i.imgur.com/omQe1U1.jpg"
+            />
+          </ImageListItem>
+        </ImageList>
 
         <Typography variant="h5">Hours</Typography>
 
