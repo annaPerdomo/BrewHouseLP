@@ -11,6 +11,7 @@ import Box from '@mui/material/Box';
 import Link from '../src/Link';
 import ProTip from '../src/ProTip';
 import Copyright from '../src/Copyright';
+import { ListItem } from '@mui/material';
 
 export default function Home() {
   return (
@@ -36,7 +37,129 @@ export default function Home() {
           Menu
         </Typography>
 
-        <List dense></List>
+        <br />
+
+        <Typography variant="h5">Address</Typography>
+        <Typography>111 S 1st St</Typography>
+        <Typography>La Puente, CA 91744</Typography>
+
+        <br />
+
+        <Typography variant="h5">Hours</Typography>
+
+        <List dense>
+          <ListItem>
+            <Grid alignItems="center" container justifyContent="space-between">
+              <Grid item>
+                <Typography
+                  sx={{ textTransform: 'capitalize', width: '200px' }}
+                >
+                  Monday
+                </Typography>
+              </Grid>
+
+              <Grid item>
+                <Typography>Closed</Typography>
+              </Grid>
+            </Grid>
+          </ListItem>
+
+          <ListItem>
+            <Grid alignItems="center" container justifyContent="space-between">
+              <Grid item>
+                <Typography
+                  sx={{ textTransform: 'capitalize', width: '200px' }}
+                >
+                  Tuesday
+                </Typography>
+              </Grid>
+
+              <Grid item>
+                <Typography>Closed</Typography>
+              </Grid>
+            </Grid>
+          </ListItem>
+
+          <ListItem>
+            <Grid alignItems="center" container justifyContent="space-between">
+              <Grid item>
+                <Typography
+                  sx={{ textTransform: 'capitalize', width: '200px' }}
+                >
+                  Wednesday
+                </Typography>
+              </Grid>
+
+              <Grid item>
+                <Typography>Closed</Typography>
+              </Grid>
+            </Grid>
+          </ListItem>
+
+          <ListItem>
+            <Grid alignItems="center" container justifyContent="space-between">
+              <Grid item>
+                <Typography
+                  sx={{ textTransform: 'capitalize', width: '200px' }}
+                >
+                  Thursday
+                </Typography>
+              </Grid>
+
+              <Grid item>
+                <Typography>Closed</Typography>
+              </Grid>
+            </Grid>
+          </ListItem>
+
+          <ListItem>
+            <Grid alignItems="center" container justifyContent="space-between">
+              <Grid item>
+                <Typography
+                  sx={{ textTransform: 'capitalize', width: '200px' }}
+                >
+                  Friday
+                </Typography>
+              </Grid>
+
+              <Grid item>
+                <Typography>Closed</Typography>
+              </Grid>
+            </Grid>
+          </ListItem>
+
+          <ListItem>
+            <Grid alignItems="center" container justifyContent="space-between">
+              <Grid item>
+                <Typography
+                  sx={{ textTransform: 'capitalize', width: '200px' }}
+                >
+                  Saturday
+                </Typography>
+              </Grid>
+
+              <Grid item>
+                <Typography>8:00am - 6:00pm</Typography>
+              </Grid>
+            </Grid>
+          </ListItem>
+
+          <ListItem>
+            <Grid alignItems="center" container justifyContent="space-between">
+              <Grid item>
+                <Typography
+                  sx={{ textTransform: 'capitalize', width: '200px' }}
+                >
+                  Sunday
+                </Typography>
+              </Grid>
+
+              <Grid item>
+                <Typography>8:00am - 6:00pm</Typography>
+              </Grid>
+            </Grid>
+          </ListItem>
+        </List>
 
         <Copyright />
       </Box>
