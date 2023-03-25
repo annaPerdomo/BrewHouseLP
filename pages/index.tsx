@@ -47,7 +47,7 @@ export default function Home() {
 
         <Typography variant="h5">Hours</Typography>
 
-        <List dense>
+        <List dense sx={{ pb: 4 }}>
           <ListItem>
             <Grid alignItems="center" container justifyContent="space-between">
               <Grid item>
