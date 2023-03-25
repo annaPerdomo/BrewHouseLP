@@ -80,7 +80,6 @@ export default function Home(): React.ReactElement<any> {
           <Typography>La Puente, CA 91744</Typography>
 
           <br />
-          <br />
 
           <Typography variant="h5">Hours</Typography>
 
