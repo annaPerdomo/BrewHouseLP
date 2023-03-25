@@ -17,6 +17,7 @@
     "@mui/material": "latest",
     "next": "latest",
     "react": "latest",
+    "react-device-detect": "^2.2.3",
     "react-dom": "latest"
   },
   "devDependencies": {
