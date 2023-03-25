@@ -1,16 +1,16 @@
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import Typography from '@mui/material/Typography';
-import Image from 'next/image';
-import * as React from 'react';
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Typography from "@mui/material/Typography";
+import Image from "next/image";
+import * as React from "react";
 
-import Copyright from '../src/components/Copyright';
-import useDeviceSize from '../src/hooks/useDeviceSize';
+import Copyright from "../src/components/Copyright";
+import useDeviceSize from "../src/hooks/useDeviceSize";
 
 export default function Home(): React.ReactElement<any> {
   const { width } = useDeviceSize();
@@ -20,9 +20,9 @@ export default function Home(): React.ReactElement<any> {
     <>
       <Box
         sx={{
-          backgroundColor: 'common.white',
-          textAlign: 'center',
-          width: '100%',
+          backgroundColor: "common.white",
+          textAlign: "center",
+          width: "100%",
         }}
       >
         <img
@@ -33,14 +33,14 @@ export default function Home(): React.ReactElement<any> {
         />
       </Box>
 
-      <Container maxWidth="lg" sx={{ overflow: 'hidden' }}>
+      <Container maxWidth="lg" sx={{ overflow: "hidden" }}>
         <Box
           sx={{
             mb: 4,
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <br />
@@ -52,8 +52,8 @@ export default function Home(): React.ReactElement<any> {
             cols={1}
             gap={16}
             sx={{
-              width: isMobile ? '100%' : 500,
-              height: isMobile ? '100%' : 800,
+              width: isMobile ? "100%" : 500,
+              height: isMobile ? "100%" : 800,
             }}
             rowHeight={300}
           >
@@ -93,9 +93,9 @@ export default function Home(): React.ReactElement<any> {
               >
                 <Grid item>
                   <Typography
-                    sx={{ textTransform: 'capitalize', width: '200px' }}
+                    sx={{ textTransform: "capitalize", width: "200px" }}
                   >
-                    Monday
+                    Monday - Friday
                   </Typography>
                 </Grid>
 
@@ -113,87 +113,7 @@ export default function Home(): React.ReactElement<any> {
               >
                 <Grid item>
                   <Typography
-                    sx={{ textTransform: 'capitalize', width: '200px' }}
-                  >
-                    Tuesday
-                  </Typography>
-                </Grid>
-
-                <Grid item>
-                  <Typography>Closed</Typography>
-                </Grid>
-              </Grid>
-            </ListItem>
-
-            <ListItem>
-              <Grid
-                alignItems="center"
-                container
-                justifyContent="space-between"
-              >
-                <Grid item>
-                  <Typography
-                    sx={{ textTransform: 'capitalize', width: '200px' }}
-                  >
-                    Wednesday
-                  </Typography>
-                </Grid>
-
-                <Grid item>
-                  <Typography>Closed</Typography>
-                </Grid>
-              </Grid>
-            </ListItem>
-
-            <ListItem>
-              <Grid
-                alignItems="center"
-                container
-                justifyContent="space-between"
-              >
-                <Grid item>
-                  <Typography
-                    sx={{ textTransform: 'capitalize', width: '200px' }}
-                  >
-                    Thursday
-                  </Typography>
-                </Grid>
-
-                <Grid item>
-                  <Typography>Closed</Typography>
-                </Grid>
-              </Grid>
-            </ListItem>
-
-            <ListItem>
-              <Grid
-                alignItems="center"
-                container
-                justifyContent="space-between"
-              >
-                <Grid item>
-                  <Typography
-                    sx={{ textTransform: 'capitalize', width: '200px' }}
-                  >
-                    Friday
-                  </Typography>
-                </Grid>
-
-                <Grid item>
-                  <Typography>Closed</Typography>
-                </Grid>
-              </Grid>
-            </ListItem>
-
-            <ListItem>
-              <Grid
-                alignItems="center"
-                container
-                justifyContent="space-between"
-              >
-                <Grid item>
-                  <Typography
-                    sx={{ textTransform: 'capitalize', width: '200px' }}
+                    sx={{ textTransform: "capitalize", width: "200px" }}
                   >
                     Saturday
                   </Typography>
@@ -213,7 +133,7 @@ export default function Home(): React.ReactElement<any> {
               >
                 <Grid item>
                   <Typography
-                    sx={{ textTransform: 'capitalize', width: '200px' }}
+                    sx={{ textTransform: "capitalize", width: "200px" }}
                   >
                     Sunday
                   </Typography>
