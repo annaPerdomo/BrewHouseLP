@@ -1,3 +1,4 @@
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import ImageList from '@mui/material/ImageList';
@@ -5,14 +6,14 @@ import ImageListItem from '@mui/material/ImageListItem';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import * as React from 'react';
+import { isMobile } from 'react-device-detect';
 
 import Copyright from '../src/Copyright';
 
 export default function Home(): React.ReactElement<any> {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ overflow: 'hidden' }}>
       <Box
         sx={{
           my: 4,
@@ -22,9 +23,11 @@ export default function Home(): React.ReactElement<any> {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h2" component="h1">
-          THE BREW HOUSE
-        </Typography>
+        <Box sx={{ textAlign: 'center' }}>
+          <Typography variant="h2" component="h1">
+            THE BREW HOUSE
+          </Typography>
+        </Box>
 
         <Typography variant="h5">111 S 1st St</Typography>
         <Typography variant="h5">La Puente, CA 91744</Typography>
@@ -36,7 +39,10 @@ export default function Home(): React.ReactElement<any> {
         <ImageList
           cols={1}
           gap={8}
-          sx={{ width: 500, height: 800 }}
+          sx={{
+            width: '100%',
+            height: isMobile ? 660 : 800,
+          }}
           rowHeight={300}
         >
           <ImageListItem>
