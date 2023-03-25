@@ -1,5 +1,11 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import List from '@mui/material/List';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import ListSubheader from '@mui/material/ListSubheader';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '../src/Link';
@@ -18,13 +24,20 @@ export default function Home() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" component="h1" gutterBottom>
-          Material UI - Next.js example in TypeScript
+        <Typography variant="h2" component="h1">
+          BREW HOUSE
         </Typography>
-        <Link href="/about" color="secondary">
-          Go to the about page
-        </Link>
-        <ProTip />
+
+        <Typography variant="h5" gutterBottom>
+          La Puente
+        </Typography>
+        <br />
+        <Typography variant="h3" gutterBottom>
+          Menu
+        </Typography>
+
+        <List dense></List>
+
         <Copyright />
       </Box>
     </Container>
