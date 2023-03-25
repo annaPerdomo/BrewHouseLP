@@ -1,0 +1,40 @@
+{
+  "author": "Anna Perdomo <annamaliaperdomo@gmail.com>",
+  "bugs": {
+    "email": "annamaliaperdomo@gmail.com",
+    "url": "https://variationsonastring.vercel.app/"
+  },
+  "contributors": [
+    "Anna Perdomo <annamaliaperdomo@gmail.com>",
+    "Daniel Mendez <awilddanoru@gmail.com>"
+  ],
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  },
+  "name": "brew-house-lp",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "version": "1.0.0"
+}
