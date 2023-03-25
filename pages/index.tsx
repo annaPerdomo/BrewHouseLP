@@ -25,8 +25,8 @@ export default function Home(): React.ReactElement<any> {
           width: '100%',
         }}
       >
-        <Image
-          src="/logo.png"
+        <img
+          src="https://i.imgur.com/pzw3iP5.png"
           alt="me"
           width={isMobile ? 300 : 1000}
           height={isMobile ? 150 : 300}
