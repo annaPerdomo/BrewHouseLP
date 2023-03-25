@@ -8,9 +8,13 @@ import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
-import Copyright from '../src/Copyright';
+import Copyright from '../src/components/Copyright';
+import useDeviceSize from '../src/hooks/useDeviceSize';
 
 export default function Home(): React.ReactElement<any> {
+  const { height, width } = useDeviceSize();
+
+  const isMobile = width <= 500;
   return (
     <Container maxWidth="lg" sx={{ overflow: 'hidden' }}>
       <Box
@@ -39,8 +43,8 @@ export default function Home(): React.ReactElement<any> {
           cols={1}
           gap={16}
           sx={{
-            width: '100%',
-            height: '100%',
+            width: isMobile ? '100%' : 500,
+            height: isMobile ? '100%' : 800,
           }}
           rowHeight={300}
         >
