@@ -7,7 +7,6 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
-import { isMobile } from 'react-device-detect';
 
 import Copyright from '../src/Copyright';
 
@@ -38,10 +37,10 @@ export default function Home(): React.ReactElement<any> {
 
         <ImageList
           cols={1}
-          gap={8}
+          gap={16}
           sx={{
             width: '100%',
-            height: isMobile ? 660 : 800,
+            height: '100%',
           }}
           rowHeight={300}
         >
