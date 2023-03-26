@@ -1,77 +1,131 @@
-import * as React from 'react';
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import ListSubheader from '@mui/material/ListSubheader';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Link from '../src/Link';
-import ProTip from '../src/ProTip';
-import Copyright from '../src/Copyright';
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Typography from "@mui/material/Typography";
+import Image from "next/image";
+import * as React from "react";
 
-export default function Home() {
+import Copyright from "../src/components/Copyright";
+import Menu from "../src/components/Menu";
+import useDeviceSize from "../src/hooks/useDeviceSize";
+
+export default function Home(): React.ReactElement<any> {
+  const { width } = useDeviceSize();
+
+  const isMobile = width <= 500;
   return (
-    <Container maxWidth="lg">
+    <>
       <Box
         sx={{
-          my: 4,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
+          backgroundColor: "common.white",
+          textAlign: "center",
+          width: "100%",
         }}
       >
-        <Typography variant="h2" component="h1">
-          BREW HOUSE
-        </Typography>
-
-        <Typography variant="h5" gutterBottom>
-          La Puente
-        </Typography>
-        <br />
-        <Typography variant="h3" gutterBottom>
-          Menu
-        </Typography>
-
-        <Grid container spacing={2}>
-          <Grid item xs={6} md={6} sx={{ height: "100%"}}>
-            Coffee        
-            <List dense>
-              <ListItemText>Drip</ListItemText>
-              <ListItemText secondary="⮑ Medium: Columbia | Dark: Brazil">Pour Over</ListItemText>
-              <ListItemText>Cold Brew</ListItemText>
-              <ListItemText>Espresso</ListItemText>
-              <ListItemText>Latte</ListItemText>
-              <ListItemText>Americano</ListItemText>
-              <ListItemText>Cortado</ListItemText>
-              <ListItemText>Cafe Mocha</ListItemText>          
-            </List>
-          </Grid>
-          <Grid item xs={6} md={6}>
-            Tea        
-            <List dense>
-              <ListItemText>Raspberry Hibiscus</ListItemText>
-              <ListItemText>Very Berry</ListItemText>
-              <ListItemText>Chai</ListItemText>
-              <ListItemText>Green (Matcha)</ListItemText>          
-            </List>
-          </Grid>
-          <Grid item xs={6} md={6}>
-            Other Drinks        
-            <List dense>
-              <ListItemText>Hot Chocolate</ListItemText>
-              <ListItemText>Hot Vanilla</ListItemText>
-              <ListItemText>Hot Caramel</ListItemText>
-              <ListItemText>Bottled Spring Water</ListItemText>          
-            </List>
-          </Grid>
-        </Grid>
-
-        <Copyright />
+        <img
+          src="https://i.imgur.com/pzw3iP5.png"
+          alt="me"
+          width={isMobile ? 300 : 1000}
+          height={isMobile ? 150 : 300}
+        />
       </Box>
-    </Container>
+
+      <Container maxWidth="lg" sx={{ overflow: "hidden" }}>
+        <Box
+          sx={{
+            mb: 4,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <br />
+          <Typography variant="h3" gutterBottom>
+            Menu
+          </Typography>
+
+          <Menu />
+          
+          <Typography variant="h5">Address</Typography>
+
+          <Typography>111 S 1st St</Typography>
+          <Typography>La Puente, CA 91744</Typography>
+
+          <br />
+          <br />
+
+          <Typography variant="h5">Hours</Typography>
+
+          <List dense sx={{ pb: 4 }}>
+            <ListItem>
+              <Grid
+                alignItems="center"
+                container
+                justifyContent="space-between"
+              >
+                <Grid item>
+                  <Typography
+                    sx={{ textTransform: "capitalize", width: "200px" }}
+                  >
+                    Monday - Friday
+                  </Typography>
+                </Grid>
+
+                <Grid item>
+                  <Typography>Closed</Typography>
+                </Grid>
+              </Grid>
+            </ListItem>
+
+            <ListItem>
+              <Grid
+                alignItems="center"
+                container
+                justifyContent="space-between"
+              >
+                <Grid item>
+                  <Typography
+                    sx={{ textTransform: "capitalize", width: "200px" }}
+                  >
+                    Saturday
+                  </Typography>
+                </Grid>
+
+                <Grid item>
+                  <Typography>8:00am - 6:00pm</Typography>
+                </Grid>
+              </Grid>
+            </ListItem>
+
+            <ListItem>
+              <Grid
+                alignItems="center"
+                container
+                justifyContent="space-between"
+              >
+                <Grid item>
+                  <Typography
+                    sx={{ textTransform: "capitalize", width: "200px" }}
+                  >
+                    Sunday
+                  </Typography>
+                </Grid>
+
+                <Grid item>
+                  <Typography>8:00am - 6:00pm</Typography>
+                </Grid>
+              </Grid>
+            </ListItem>
+          </List>
+
+          <Copyright />
+        </Box>
+      </Container>
+    </>
   );
 }
