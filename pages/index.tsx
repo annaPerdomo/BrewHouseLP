@@ -45,12 +45,8 @@ export default function Home(): React.ReactElement<any> {
           }}
         >
           <br />
-          <Typography variant="h3" gutterBottom>
-            Menu
-          </Typography>
-
           <Menu />
-          
+
           <Typography variant="h5">Address</Typography>
 
           <Typography>111 S 1st St</Typography>
