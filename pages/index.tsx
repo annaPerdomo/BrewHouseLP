@@ -6,10 +6,10 @@ import ImageListItem from "@mui/material/ImageListItem";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import Typography from "@mui/material/Typography";
-import Image from "next/image";
 import * as React from "react";
 
 import Copyright from "../src/components/Copyright";
+import FeaturedItems from "../src/components/FeaturedItems";
 import useDeviceSize from "../src/hooks/useDeviceSize";
 
 export default function Home(): React.ReactElement<any> {
@@ -43,6 +43,7 @@ export default function Home(): React.ReactElement<any> {
             alignItems: "center",
           }}
         >
+          <FeaturedItems />
           <br />
           <Typography variant="h3" gutterBottom>
             Menu
