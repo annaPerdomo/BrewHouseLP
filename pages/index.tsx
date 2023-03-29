@@ -32,6 +32,36 @@ export default function Home(): React.ReactElement<any> {
         />
       </Box>
 
+      <br />
+
+      <Typography
+        variant="h3"
+        gutterBottom
+        sx={{ textAlign: "center", marginBottom: "1%" }}
+      >
+        Menu
+      </Typography>
+
+      <Box
+        sx={{
+          mb: 4,
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "beige",
+        }}
+      >
+        <br />
+        <Typography
+          variant="h4"
+          color="black"
+          gutterBottom
+          sx={{ textAlign: "center", marginBottom: "1%" }}
+        >
+          Featured Items
+        </Typography>
+
+        <FeaturedItems />
+      </Box>
       <Container maxWidth="lg" sx={{ overflow: "hidden" }}>
         <Box
           sx={{
@@ -42,9 +72,12 @@ export default function Home(): React.ReactElement<any> {
             alignItems: "center",
           }}
         >
-          <FeaturedItems />
           <br />
+
           <Menu />
+
+          <br />
+          <br />
 
           <Typography variant="h5">Address</Typography>
 
