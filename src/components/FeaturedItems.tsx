@@ -1,4 +1,4 @@
-import { Grid, Paper } from "@mui/material";
+import { Card, Grid, Paper } from "@mui/material";
 import Image from "next/image";
 import Carousel from "react-material-ui-carousel";
 
@@ -25,31 +25,51 @@ export default function FeaturedItems() {
     <div style={{ maxWidth: "80%", margin: "0 auto" }}>
       <Carousel autoPlay={false} indicators={false} navButtonsAlwaysVisible>
         {itemData.map((item, i) => {
-          return (
-            <Grid container columns={12} spacing={4} justifyContent="center">
-              <Item key={i} item={item} />
-              <Item key={i} item={item} />
-              <Item key={i} item={item} />
-            </Grid>
-          );
+          return <CarouselItems key={i} item={item} />;
         })}
       </Carousel>
-
       <br />
     </div>
   );
 }
 
-function Item(props: any) {
+function CarouselItems(props: any) {
   return (
-    <Grid item xs={12} sm={6} lg={3}>
-      <Image
-        src={props.item.src}
-        alt={props.item.name}
-        width="375"
-        height="375"
-      />
-      <p>{props.item.description}</p>
+    <Grid
+      container
+      columns={16}
+      spacing={2}
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Grid item xs={16} sm={4} lg={4}>
+        <Image
+          src={props.item.src}
+          alt={props.item.name}
+          width="375"
+          height="375"
+        />
+      </Grid>
+      <Grid container item xs={16} sm={6} lg={6} justifyContent="center">
+        <Card sx={{ borderRadius: "5%", padding: "10px", textAlign: "center" }}>
+          <Image
+            src={props.item.src}
+            alt={props.item.name}
+            width="375"
+            height="375"
+          />
+          <p>{props.item.name}</p>
+          <p>{props.item.description}</p>
+        </Card>
+      </Grid>
+      <Grid item xs={16} sm={4} lg={4}>
+        <Image
+          src={props.item.src}
+          alt={props.item.name}
+          width="375"
+          height="375"
+        />
+      </Grid>
     </Grid>
   );
 }
