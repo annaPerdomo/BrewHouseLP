@@ -1,6 +1,8 @@
 import { Card, Grid, Paper } from "@mui/material";
 import Image from "next/image";
+import { useState } from "react";
 import Carousel from "react-material-ui-carousel";
+import useDeviceSize from "../hooks/useDeviceSize";
 
 export default function FeaturedItems() {
   const itemData = [
@@ -34,6 +36,9 @@ export default function FeaturedItems() {
 }
 
 function CarouselItems(props: any) {
+  const { width } = useDeviceSize();
+  const isMobile = width <= 500;
+
   return (
     <Grid
       container
@@ -42,7 +47,7 @@ function CarouselItems(props: any) {
       justifyContent="center"
       alignItems="center"
     >
-      <Grid item xs={16} sm={4} lg={4}>
+      <Grid item sm={2} lg={4} sx={{ display: isMobile ? "none" : "block" }}>
         <Image
           src={props.item.src}
           alt={props.item.name}
@@ -50,8 +55,13 @@ function CarouselItems(props: any) {
           height="375"
         />
       </Grid>
-      <Grid container item xs={16} sm={6} lg={6} justifyContent="center">
-        <Card sx={{ borderRadius: "5%", padding: "10px", textAlign: "center" }}>
+      <Grid item xs={16} sm={4} lg={6}>
+        <Card
+          sx={{
+            borderRadius: "5%",
+            textAlign: "center",
+          }}
+        >
           <Image
             src={props.item.src}
             alt={props.item.name}
@@ -62,7 +72,7 @@ function CarouselItems(props: any) {
           <p>{props.item.description}</p>
         </Card>
       </Grid>
-      <Grid item xs={16} sm={4} lg={4}>
+      <Grid item sm={2} lg={4} sx={{ display: isMobile ? "none" : "block" }}>
         <Image
           src={props.item.src}
           alt={props.item.name}
