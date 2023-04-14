@@ -19,13 +19,12 @@ export default function Home(): React.ReactElement<any> {
     <>
       <Box
         sx={{
-          backgroundColor: "common.white",
           textAlign: "center",
           width: "100%",
         }}
       >
         <img
-          src="https://i.imgur.com/pzw3iP5.png"
+          src="https://i.imgur.com/9pJORYw.png"
           alt="me"
           width={isMobile ? 300 : 1000}
           height={isMobile ? 150 : 300}
