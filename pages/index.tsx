@@ -46,7 +46,7 @@ export default function Home(): React.ReactElement<any> {
           mb: 4,
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "beige",
+          backgroundColor: "tan",
         }}
       >
         <br />

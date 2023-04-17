@@ -78,8 +78,8 @@ export default function Menu() {
             <ListItemText>Shaken Cafe de Olla</ListItemText>
             <ListItemText>Dulce de Leche Latte</ListItemText>
             <ListItemText>Spanish Latte</ListItemText>
-            <ListItemText>Horchata</ListItemText>
-            <ListItemText>Horchata & Cold Brew</ListItemText>
+            {/* <ListItemText>Horchata</ListItemText>
+            <ListItemText>Horchata & Cold Brew</ListItemText> */}
           </List>
         </Grid>
         <Grid item xs={4} sm={4}>
