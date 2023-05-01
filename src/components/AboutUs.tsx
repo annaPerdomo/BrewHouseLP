@@ -44,7 +44,7 @@ export default function AboutUs() {
               }}
             >
               <img
-                src="/instagram.png"
+                src="https://imgur.com/GBaIP5I.png"
                 height="50px"
                 width="50px"
                 alt="Instagram: TheBrewHouseLP"
