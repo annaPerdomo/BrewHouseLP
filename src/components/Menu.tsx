@@ -38,6 +38,7 @@ export default function Menu() {
                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 alt={item.title}
                 loading="lazy"
+                style={{ borderRadius: "25px" }}
               />
             </ImageListItem>
           ))}
