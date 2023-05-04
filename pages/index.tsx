@@ -42,11 +42,8 @@ export default function Home(): React.ReactElement<any> {
         Menu
       </Typography>
 
-      {/* <Box
+      <Box
         sx={{
-          // mb: 4,
-          // justifyContent: "center",
-          // alignItems: "center",
           backgroundColor: "tan",
         }}
       >
@@ -60,7 +57,7 @@ export default function Home(): React.ReactElement<any> {
           Featured Items
         </Typography>
         <FeaturedItems />
-      </Box> */}
+      </Box>
       <Container maxWidth="lg" sx={{ overflow: "hidden" }}>
         <Box
           sx={{
