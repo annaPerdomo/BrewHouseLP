@@ -66,7 +66,7 @@ export default function AboutUs() {
             src="https://imgur.com/MvGEluY.jpeg"
             height="350"
             width="350"
-            style={{ borderRadius: "5%" }}
+            style={{ borderRadius: "25px" }}
           />
           {/* </div> */}
           {/* <div
