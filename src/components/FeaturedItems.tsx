@@ -10,7 +10,7 @@ export default function FeaturedItems() {
     {
       id: 1,
       name: "Rose & Lavender Lemonades",
-      img: "https://i.imgur.com/Hbu0d9C.jpg",
+      img: "https://i.imgur.com/FfzRvHx.jpg",
       description:
         "Lavender syrup or rose syrup mixed in with our delicious lemonade base.",
     },
@@ -27,6 +27,13 @@ export default function FeaturedItems() {
       img: "https://imgur.com/qpUyiEq.jpg",
       description:
         "A traditional Mexican coffee beverage made by combining spices and coffee. Available hot or iced.",
+    },
+    {
+      id: 4,
+      name: "Snickerdoodle Cookie",
+      img: "https://i.imgur.com/hHHKYhD.jpg",
+      description:
+        "A delicious, soft and chewy cinnamon sugar cookie from Hey Batter Batter!",
     },
   ];
 
