@@ -47,7 +47,7 @@ export default function FeaturedItems() {
             500: {
               gap: "20%",
               fixedWidth: "350px",
-              padding: { left: "10%" },
+              padding: { left: "20%" },
               perPage: 1,
             },
           },
