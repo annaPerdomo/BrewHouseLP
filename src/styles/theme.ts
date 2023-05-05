@@ -31,7 +31,11 @@ const theme = createTheme({
     mode: 'dark',
   },
   typography: {
-    fontFamily: barlowCondensed.style.fontFamily,
+    fontFamily: roboto.style.fontFamily,
+    h3: {
+      fontFamily: barlowCondensed.style.fontFamily,
+      fontWeight: 700,
+    },
   },
 });
 
