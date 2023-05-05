@@ -42,7 +42,7 @@ export default function Home(): React.ReactElement<any> {
       >
         <br />
         <Typography
-          variant="h4"
+          variant="h3"
           color="black"
           gutterBottom
           sx={{ textAlign: "center", mb: "2%" }}

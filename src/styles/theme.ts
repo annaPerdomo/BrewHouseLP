@@ -16,7 +16,7 @@ export const barlowCondensed = Barlow_Condensed({
   fallback: ['Helvetica', 'Arial', 'sans-serif'],
 });
 
-// Create a theme instance.
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -31,7 +31,19 @@ const theme = createTheme({
     mode: 'dark',
   },
   typography: {
-    fontFamily: barlowCondensed.style.fontFamily,
+    fontFamily: roboto.style.fontFamily,
+    h3: {
+      fontFamily: barlowCondensed.style.fontFamily,
+      fontWeight: 700,
+    },
+    h5: {
+      fontFamily: barlowCondensed.style.fontFamily,
+      fontWeight: 700,
+    },
+    h6: {
+      fontFamily: barlowCondensed.style.fontFamily,
+      fontWeight: 700,
+    },
   },
 });
 
