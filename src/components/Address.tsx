@@ -7,6 +7,7 @@ export default function Address() {
 
       <Typography>111 S 1st St</Typography>
       <Typography>La Puente, CA 91744</Typography>
+      <Typography>(626) 225-0980</Typography>
     </>
   );
 }
