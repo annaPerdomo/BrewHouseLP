@@ -26,3 +26,10 @@
   visibility: visible;
   opacity: 1;
 }
+
+@media (max-width: 600px) {
+  .description { 
+    width: 350px;
+  }
+}
+  
