@@ -37,7 +37,7 @@ export default function Home(): React.ReactElement<any> {
 
       <Box
         sx={{
-          backgroundColor: 'tan',
+          backgroundColor: 'secondary.main',
           paddingBottom: '3%',
         }}
       >
