@@ -1,9 +1,16 @@
-import { Roboto } from 'next/font/google';
+import { Barlow_Condensed, Roboto } from 'next/font/google';
 import { createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 
 export const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  fallback: ['Helvetica', 'Arial', 'sans-serif'],
+});
+
+export const barlowCondensed = Barlow_Condensed({
+  weight: ['400', '500', '600', '700', '800'],
   subsets: ['latin'],
   display: 'swap',
   fallback: ['Helvetica', 'Arial', 'sans-serif'],
@@ -16,7 +23,7 @@ const theme = createTheme({
       main: '#556cd6',
     },
     secondary: {
-      main: '#19857b',
+      main: '#C9B197',
     },
     error: {
       main: red.A400,
@@ -24,7 +31,7 @@ const theme = createTheme({
     mode: 'dark',
   },
   typography: {
-    fontFamily: roboto.style.fontFamily,
+    fontFamily: barlowCondensed.style.fontFamily,
   },
 });
 
