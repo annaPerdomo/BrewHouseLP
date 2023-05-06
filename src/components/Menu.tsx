@@ -65,10 +65,11 @@ export default function Menu() {
             <ListItemText>
               <Typography variant="h6">Blended</Typography>
             </ListItemText>
-            <ListItemText>Hot Chocolate</ListItemText>
-            <ListItemText>Hot Vanilla</ListItemText>
-            <ListItemText>Hot Caramel</ListItemText>
-            <ListItemText>Bottled Spring Water</ListItemText>
+            <ListItemText>Coffee</ListItemText>
+            <ListItemText>Vanilla</ListItemText>
+            <ListItemText>Strawberry</ListItemText>
+            <ListItemText>Mocha</ListItemText>
+            <ListItemText>Dulce de Leche</ListItemText>
           </List>
         </Grid>
         <Grid item xs={4} sm={4}>
