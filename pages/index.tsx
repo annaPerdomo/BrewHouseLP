@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
@@ -17,18 +18,16 @@ export default function Home(): React.ReactElement<any> {
 
   return (
     <>
-      <Box
+      <Stack
         sx={{
-          maxHeight: '600px',
           position: 'relative',
-          textAlign: 'center',
           width: '100%',
         }}
       >
         <img
           alt="coffee-shop-image"
           src="https://i.imgur.com/UuMTeR6.jpg"
-          style={{ opacity: 0.5, maxHeight: '600px' }}
+          style={{ opacity: 0.5, maxHeight: '550px' }}
           width="100%"
         />
 
@@ -44,7 +43,7 @@ export default function Home(): React.ReactElement<any> {
           }}
           width={isMobile ? 300 : 1000}
         />
-      </Box>
+      </Stack>
 
       <Box
         sx={{
