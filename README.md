@@ -2,9 +2,9 @@
 
 # ☕ The Brew House
 
-### A single-page site for a neighborhood coffee shop in La Puente, CA
+### A practice build — single-page site for a neighborhood coffee shop in La Puente, CA
 
-A clean, mobile-first landing page that shows off The Brew House's space, featured menu items, and social presence — built to give a local small business a polished online home.
+A clean, mobile-first landing page for The Brew House coffee shop. This was an early **practice project** — I built it to sharpen my Next.js, TypeScript, and MUI skills by shipping a small, real-world single-page site end to end.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-brewhouselp.vercel.app-A0522D?style=for-the-badge&logo=vercel&logoColor=white)](https://brewhouselp.vercel.app)
 
