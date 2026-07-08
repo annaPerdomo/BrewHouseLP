@@ -1,6 +1,6 @@
 <div align="center">
 
-# ☕ The Brew House
+# The Brew House
 
 ### A practice build — single-page site for a neighborhood coffee shop in La Puente, CA
 
